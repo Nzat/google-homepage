@@ -28,11 +28,17 @@
     </header>
     <main>
         <content class="main">
-            <img alt="Google" height="92" src="images/googlelogo_color_272x92dp.png">
+            <img alt="Google" height="92" src="images/googlelogo_color_272x92dp.png"><br>
             <form method="get" action="http://google.com/search">
-                <input type="text"><br>
-                <button name="search" type="submit">Google Search</button>
-                <button name="lucky">I'm Feeling Lucky</button>
+                <div class="search-box">
+                    <span class="material-icons">search</span>
+                    <input type="text" name="search" id="search-input">
+                    <span class="material-icons">mic</span>
+                </div>
+                <div>
+                    <button name="search" type="submit" class="search-button">Google Search</button>
+                    <button name="lucky" class="search-button">I'm Feeling Lucky</button>
+                </div>
             </form>
         </content>
     </main>
